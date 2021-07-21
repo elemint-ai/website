@@ -1,0 +1,122 @@
+/* screen - winblows */
+
+.winblows {
+  background-color: #000000c7;
+  height: 2080px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: relative;
+  width: 2920px;
+  --font-size-m: 72px;
+
+  --font-family-moderat-condensedbold_italic: "Moderat-CondensedBold Italic",
+    Helvetica;
+}
+
+.winblows .elemint-I420Fu {
+  background-color: transparent;
+  height: 212px;
+  left: 540px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 188px;
+  width: 882px;
+}
+
+.winblows .elemint-eZglSA {
+  background-color: transparent;
+  height: 212px;
+  left: 500px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 226px;
+  width: 882px;
+}
+
+.winblows .elemint-ITVefu {
+  background-color: transparent;
+  height: 212px;
+  left: 530px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 254px;
+  width: 882px;
+}
+
+.winblows .elemint-56DL8L {
+  background-color: transparent;
+  height: 212px;
+  left: 572px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 231px;
+  width: 882px;
+}
+
+.winblows .elemint-nCnPXY {
+  background-color: transparent;
+  height: 212px;
+  left: 534px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 218px;
+  width: 882px;
+}
+
+.winblows .star-1-I420Fu {
+  background-color: transparent;
+  height: 109px;
+  left: 720px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 248px;
+  width: 110px;
+}
+
+.winblows .star-2-I420Fu {
+  background-color: transparent;
+  height: 110px;
+  left: 813px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 418px;
+  width: 109px;
+}
+
+.winblows .star-3-I420Fu {
+  background-color: transparent;
+  height: 109px;
+  left: 1002px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 193px;
+  width: 110px;
+}
+
+.winblows .star-4-I420Fu {
+  background-color: transparent;
+  height: 110px;
+  left: 1207px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 469px;
+  width: 109px;
+}
+
+.winblows .title-I420Fu {
+  background-color: transparent;
+  color: #f6f5ec;
+  font-family: var(--font-family-moderat-condensedbold_italic);
+  font-size: var(--font-size-m);
+  font-style: italic;
+  font-weight: 700;
+  height: auto;
+  left: 628px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 579px;
+  width: 832px;
+}
