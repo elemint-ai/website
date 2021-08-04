@@ -90,7 +90,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  I keep my sets close, but my finite semiprimitive perumation
+                  I keep my sets close, but my finite semiprimitive permutation
                   groups closer.
                 </p>
               </CardBody>
