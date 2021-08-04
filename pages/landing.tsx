@@ -47,10 +47,16 @@ export default function LandingPage(props: any) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <img alt="..." src="/img/Elemint-Logo.png" />
+              <img
+                className={classes.logo}
+                alt="..."
+                src="/img/Elemint-Logo.png"
+              />
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
               <h1 className={classes.title}>Bring your ideas into fruition.</h1>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
               <h4>
                 Elemint is an experienced and highly technical team equipped
                 with cutting edge technology to offer a broad suite of services.

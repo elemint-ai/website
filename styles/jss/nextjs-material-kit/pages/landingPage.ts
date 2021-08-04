@@ -8,6 +8,10 @@ const landingPageStyle = (theme: any) =>
       color: "#FFFFFF",
       ...container,
     },
+    logo: {
+      width: "100%",
+      maxWidth: "500px",
+    },
     title: {
       ...title,
       display: "inline-block",
