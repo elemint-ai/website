@@ -56,19 +56,19 @@ export default function LandingPage(props: any) {
                 with cutting edge technology to offer a broad suite of services.
               </h4>
               <h4>
-                Utilising computational modelling, mathematical optimization and
-                machine learning, we can address any high calibre,
+                By utilising computational modelling, mathematical optimization,
+                and machine learning, we can address any high calibre,
                 computationally intense project.
               </h4>
               <h4>
                 We are a small team of hard working problem solvers,
-                mathematicians and scientists with strong technical backgrounds
-                and a high level of passion for their work.
+                mathematicians, and scientists with strong technical backgrounds
+                with a high level of passion for our work.
               </h4>
               <h4>
                 We have collaborated successfully on a number of projects over
-                three years and are ready to tackle new, complex problems head
-                on.
+                multiple years and are always looking for opportunities to
+                tackle complex problems head on.
               </h4>
               <br />
               {/* <Button

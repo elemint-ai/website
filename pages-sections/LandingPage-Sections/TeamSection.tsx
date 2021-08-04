@@ -9,10 +9,10 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
-import Button from "components/CustomButtons/Button";
+// import Button from "components/CustomButtons/Button";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
-import CardFooter from "components/Card/CardFooter";
+// import CardFooter from "components/Card/CardFooter";
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/teamStyle";
 
@@ -47,7 +47,7 @@ export default function TeamSection() {
               <CardBody>
                 <p className={classes.description}>vim is my WD-40.</p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -69,14 +69,14 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="/img/faces/christian.jpg"
+                  src="/img/faces/kyle.jpg"
                   alt="..."
                   className={imageClasses}
                 />
@@ -94,7 +94,7 @@ export default function TeamSection() {
                   groups closer.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -109,7 +109,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-linkedin"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -132,7 +132,7 @@ export default function TeamSection() {
                   understand eigenvectors.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -154,7 +154,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
         </GridContainer>
