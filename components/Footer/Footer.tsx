@@ -42,7 +42,7 @@ export default function Footer(props: any) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/landing" className={classes.block}>
+              <a href="/blog" className={classes.block}>
                 Blog
               </a>
             </ListItem>
