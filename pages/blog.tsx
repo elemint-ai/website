@@ -14,6 +14,7 @@ const dashboardRoutes: any = [];
 
 import { container } from "styles/jss/nextjs-material-kit";
 import { makeStyles } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
 
 const useStyles = makeStyles((theme) => ({
   container,
@@ -41,6 +42,7 @@ const Blog: FunctionComponent<IProps> = ({ articles }) => {
         // }}
         // {...rest}
       />
+      <Toolbar />
       <div className={classes.container}>
         <div className={styles.container}>
           {articles.map((article, i) => (

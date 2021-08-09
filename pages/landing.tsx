@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
 
 // @material-ui/icons
 
@@ -43,6 +44,7 @@ export default function LandingPage(props: any) {
         }}
         {...rest}
       />
+      <Toolbar />
       <Parallax filter responsive image="/img/landing-bg.jpg">
         <div className={classes.container}>
           <GridContainer>

@@ -18,6 +18,7 @@ import HeaderLinks from "components/Header/HeaderLinks";
 import Footer from "components/Footer/Footer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
+import Toolbar from "@material-ui/core/Toolbar";
 
 const dashboardRoutes: any = [];
 
@@ -55,6 +56,7 @@ const Article: FunctionComponent<IProps> = ({ article }) => {
         // }}
         // {...rest}
       />
+      <Toolbar />
       <div className={classes.container}>
         <Typography variant="h6" gutterBottom>
           {meta.title} {meta.date.toDateString()}
