@@ -6,11 +6,13 @@ import { FunctionComponent } from "react";
 import PropTypes from "prop-types";
 import path from "path";
 
-import { reporter } from "vfile-reporter";
+// import { reporter } from "vfile-reporter";
 import { remark } from "remark";
-import remarkPresetLintRecommended from "remark-preset-lint-recommended";
 import remarkHtml from "remark-html";
-import remark2react from "remark-react";
+import parse from "html-react-parser";
+
+import guide from "remark-preset-lint-markdown-style-guide";
+import report from "vfile-reporter";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Header from "components/Header/Header";
@@ -31,6 +33,17 @@ const useStyles = makeStyles((theme) => ({
   },
   container,
   title,
+  main: {
+    background: "#F6F5EC",
+    position: "relative",
+    zIndex: 3,
+  },
+  mainRaised: {
+    margin: "0px 30px 0px",
+    borderRadius: "6px",
+    boxShadow:
+      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
+  },
 }));
 
 interface IProps {
@@ -57,19 +70,24 @@ const Article: FunctionComponent<IProps> = ({ article }) => {
         // {...rest}
       />
       <Toolbar />
-      <Toolbar />
-      <div className={classes.container}>
-        <Typography variant="h6" gutterBottom>
-          {meta.title} {meta.date.toDateString()}
-        </Typography>
-        <Divider />
-        <div className={classes.markdown}>
-          <img src={meta.thumbnail} />
+      <div
+        className={(classes.main, classes.mainRaised)}
+        style={{ backgroundImage: "/img/profile-bg.jpg" }}
+      >
+        <Toolbar />
+        <div className={classes.container}>
+          <Typography variant="h6" gutterBottom>
+            {meta.title} {meta.date.toDateString()}
+          </Typography>
+          <Divider />
           <div className={classes.markdown}>
-            <h1>{meta.title}</h1>
-            <p>{meta.date.toDateString()}</p>
+            <img src={meta.thumbnail} />
+            <div className={classes.markdown}>
+              <h1>{meta.title}</h1>
+              <p>{meta.date.toDateString()}</p>
+            </div>
+            <div>{parse(body)}</div>
           </div>
-          <div>{body}</div>
         </div>
       </div>
       <Footer />
@@ -111,12 +129,11 @@ export async function getStaticProps({ params }: any) {
 
   // Use remark to convert markdown into HTML string
   const contentHtml = await remark()
-    .use(remarkPresetLintRecommended)
+    .use(guide)
     .use(remarkHtml)
-    .use(remark2react)
     .process(matterResult.content)
     .then((file) => {
-      console.error(reporter(file as any));
+      console.error(report(file as any));
       return String(file);
     });
 
