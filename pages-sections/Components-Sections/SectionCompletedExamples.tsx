@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/completedStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/completedStyle";
 
 const useStyles = makeStyles(styles);
 

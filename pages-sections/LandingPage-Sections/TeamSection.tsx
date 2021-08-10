@@ -14,7 +14,7 @@ import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
 // import CardFooter from "components/Card/CardFooter";
 
-import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/teamStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/landingPageSections/teamStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -30,7 +30,47 @@ export default function TeamSection() {
       <h2 className={classes.title}>Here is our team</h2>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={4} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                  src="/img/faces/kyle.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle} style={{ color: "#E9B128" }}>
+                Kyle Rosa
+                <br />
+                <small className={classes.smallTitle}>
+                  Applied Mathematician
+                </small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  I keep my sets close, but my finite semiprimitive permutation
+                  groups closer.
+                </p>
+              </CardBody>
+              {/* <CardFooter className={classes.justifyCenter}>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-twitter"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-linkedin"} />
+                </Button>
+              </CardFooter> */}
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={4} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
@@ -39,7 +79,7 @@ export default function TeamSection() {
                   className={imageClasses}
                 />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={classes.cardTitle} style={{ color: "#2C80CF" }}>
                 Luke Davis
                 <br />
                 <small className={classes.smallTitle}>Software Engineer</small>
@@ -72,47 +112,7 @@ export default function TeamSection() {
               </CardFooter> */}
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src="/img/faces/kyle.jpg"
-                  alt="..."
-                  className={imageClasses}
-                />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Kyle Rosa
-                <br />
-                <small className={classes.smallTitle}>
-                  Applied Mathematician
-                </small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  I keep my sets close, but my finite semiprimitive permutation
-                  groups closer.
-                </p>
-              </CardBody>
-              {/* <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter> */}
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={4} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
@@ -121,7 +121,7 @@ export default function TeamSection() {
                   className={imageClasses}
                 />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={classes.cardTitle} style={{ color: "#D1406B" }}>
                 Daniel Tang
                 <br />
                 <small className={classes.smallTitle}>Data Scientist</small>

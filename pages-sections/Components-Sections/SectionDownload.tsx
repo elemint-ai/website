@@ -7,7 +7,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import Button from "components/CustomButtons/Button";
 // core components
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/downloadStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/downloadStyle";
 
 const useStyles = makeStyles(styles);
 

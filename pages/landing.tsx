@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
 
 // @material-ui/icons
 
@@ -15,7 +16,7 @@ import GridItem from "components/Grid/GridItem";
 import HeaderLinks from "components/Header/HeaderLinks";
 import Parallax from "components/Parallax/Parallax";
 
-import styles from "styles/jss/nextjs-material-kit/pages/landingPage";
+import styles from "styles/jss/nextjs-material-kit/pagesX/landingPage";
 
 // Sections for this page
 // import ProductSection from "pages-sections/LandingPage-Sections/ProductSection";
@@ -43,6 +44,7 @@ export default function LandingPage(props: any) {
         }}
         {...rest}
       />
+      <Toolbar />
       <Parallax filter responsive image="/img/landing-bg.jpg">
         <div className={classes.container}>
           <GridContainer>
@@ -54,27 +56,18 @@ export default function LandingPage(props: any) {
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
-              <h1 className={classes.title}>Bring your ideas into fruition.</h1>
+              <h1 className={classes.title}>Bring your ideas to fruition.</h1>
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
               <h4>
-                Elemint is an experienced and highly technical team equipped
-                with cutting edge technology to offer a broad suite of services.
-              </h4>
-              <h4>
-                By utilising computational modelling, mathematical optimization,
-                and machine learning, we can address any high calibre,
-                computationally intense project.
-              </h4>
-              <h4>
                 We are a small team of hard working problem solvers,
                 mathematicians, and scientists with strong technical backgrounds
-                with a high level of passion for our work.
+                and a high level of passion for our work.
               </h4>
               <h4>
-                We have collaborated successfully on a number of projects over
-                multiple years and are always looking for opportunities to
-                tackle complex problems head on.
+                By utilising computational modelling, mathematical optimisation,
+                and machine learning, we can address any data-driven or
+                computationally intense project.
               </h4>
               <br />
               {/* <Button

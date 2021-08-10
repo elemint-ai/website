@@ -18,7 +18,7 @@ import CustomInput from "components/CustomInput/CustomInput";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown";
 import Button from "components/CustomButtons/Button";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/navbarsStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/navbarsStyle";
 
 const useStyles = makeStyles(styles);
 

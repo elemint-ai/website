@@ -11,7 +11,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import InfoArea from "components/InfoArea/InfoArea";
 
-import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/landingPageSections/productStyle";
 
 const useStyles = makeStyles(styles);
 

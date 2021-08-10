@@ -21,7 +21,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import Button from "components/CustomButtons/Button";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/javascriptStyles";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/javascriptStyles";
 
 const useStyles = makeStyles(styles);
 

@@ -10,7 +10,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import Card from "components/Card/Card";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/carouselStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/carouselStyle";
 
 const useStyles = makeStyles(styles);
 
