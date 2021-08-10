@@ -41,11 +41,11 @@ export default function Footer(props: any) {
                 About us
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a href="/blog" className={classes.block}>
                 Blog
               </a>
-            </ListItem>
+            </ListItem> */}
             {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/license?ref=njsmk-footer"
