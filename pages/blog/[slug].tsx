@@ -57,6 +57,7 @@ const Article: FunctionComponent<IProps> = ({ article }) => {
         // {...rest}
       />
       <Toolbar />
+      <Toolbar />
       <div className={classes.container}>
         <Typography variant="h6" gutterBottom>
           {meta.title} {meta.date.toDateString()}

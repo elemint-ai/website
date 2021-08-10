@@ -14,7 +14,7 @@ import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
 // import CardFooter from "components/Card/CardFooter";
 
-import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/teamStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/landingPageSections/teamStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -30,7 +30,7 @@ export default function TeamSection() {
       <h2 className={classes.title}>Here is our team</h2>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={4} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
@@ -70,7 +70,7 @@ export default function TeamSection() {
               </CardFooter> */}
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={4} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
@@ -112,7 +112,7 @@ export default function TeamSection() {
               </CardFooter> */}
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={4} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img

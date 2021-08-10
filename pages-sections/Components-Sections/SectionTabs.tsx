@@ -11,7 +11,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import CustomTabs from "components/CustomTabs/CustomTabs";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/tabsStyle";
 
 const useStyles = makeStyles(styles);
 

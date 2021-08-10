@@ -10,7 +10,7 @@ import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import Button from "components/CustomButtons/Button";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/exampleStyle";
 
 const useStyles = makeStyles(styles);
 

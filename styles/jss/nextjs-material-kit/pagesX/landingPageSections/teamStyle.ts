@@ -19,6 +19,7 @@ const teamStyle = (theme: any) =>
     itemGrid: {
       marginLeft: "auto",
       marginRight: "auto",
+      maxWidth: "300px",
     },
     cardTitle,
     smallTitle: {

@@ -16,7 +16,7 @@ import Primary from "components/Typography/Primary";
 import Muted from "components/Typography/Muted";
 import Quote from "components/Typography/Quote";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/typographyStyle";
+import styles from "styles/jss/nextjs-material-kit/pagesX/componentsSections/typographyStyle";
 
 const useStyles = makeStyles(styles);
 
