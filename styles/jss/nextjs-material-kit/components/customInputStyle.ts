@@ -71,7 +71,8 @@ const customInputStyle = (theme: any) =>
       height: "unset",
       "&,&::placeholder": {
         fontSize: "14px",
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily:
+          '"Source Serif Pro", "Roboto", "Helvetica", "Arial", sans-serif',
         fontWeight: 400,
         lineHeight: "1.42857",
         opacity: "1",

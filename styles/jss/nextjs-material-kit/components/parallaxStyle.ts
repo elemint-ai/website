@@ -34,10 +34,10 @@ const parallaxStyle = (theme: any) =>
     },
     parallaxResponsive: {
       // [theme.breakpoints.down("md")]: {
-      //   minHeight: "1260px",
-      //   // bottom: "100px",
+      //   minHeight: "1860px",
+      //   bottom: "100px",
       // },
-      minHeight: "1260px",
+      minHeight: "860px",
       bottom: "100px",
     },
   });

@@ -136,7 +136,7 @@ const headerStyle = (theme: any) =>
       padding: "0.625rem 0",
       marginBottom: "20px",
       color: "#555",
-      backgroundColor: "#fff !important",
+      backgroundColor: "#EDEBEB !important",
       boxShadow:
         "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
     },
