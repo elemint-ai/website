@@ -35,37 +35,43 @@ export default function Header(props: any) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const [brandExists, setBrand] = React.useState(false);
+  const [headerColor, setHeaderColor] = React.useState(color);
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove((classes as any)[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add((classes as any)[changeColorOnScroll.color]);
+      // document.body
+      //   .getElementsByTagName("header")[0]
+      //   .classList.remove((classes as any)[color]);
+      // document.body
+      //   .getElementsByTagName("header")[0]
+      //   .classList.add((classes as any)[changeColorOnScroll.color]);
+      setHeaderColor(changeColorOnScroll.color);
+      setBrand(true);
     } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add((classes as any)[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove((classes as any)[changeColorOnScroll.color]);
+      // document.body
+      //   .getElementsByTagName("header")[0]
+      //   .classList.add((classes as any)[color]);
+      // document.body
+      //   .getElementsByTagName("header")[0]
+      //   .classList.remove((classes as any)[changeColorOnScroll.color]);
+      setHeaderColor(color);
+      setBrand(false);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
-    [(classes as any)[color]]: color,
+    [(classes as any)[headerColor]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
-  const brandComponent = (
+  const brandComponent = brandExists ? (
     <Link href="/landing" as="/landing">
       <Button className={classes.title}>{brand}</Button>
     </Link>
-  );
+  ) : null;
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

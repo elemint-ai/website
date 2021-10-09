@@ -39,7 +39,7 @@ export default function LandingPage(props: any) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 100,
           color: "white",
         }}
         {...rest}

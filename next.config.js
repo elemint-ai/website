@@ -12,6 +12,7 @@ const withTM = require("next-transpile-modules")([
   "micromark-util-classify-character",
   "micromark-util-combine-extensions",
   "micromark-util-decode-numeric-character-reference",
+  "micromark-util-decode-string",
   "micromark-util-encode",
   "micromark-util-html-tag-name",
   "micromark-util-normalize-identifier",

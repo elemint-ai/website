@@ -4,7 +4,7 @@ import createStyles from "@material-ui/styles/createStyles";
 const footerStyle = (theme: any) =>
   createStyles({
     block: {
-      color: "inherit",
+      color: "white",
       padding: "0.9375rem",
       fontWeight: 500,
       fontSize: "12px",
